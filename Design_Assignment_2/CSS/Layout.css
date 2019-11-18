@@ -1,0 +1,213 @@
+.all-content-wrapper
+{ 
+overflow:visible;
+background:#f3f3f3;
+font-family: arial;
+font-size:14;
+width:100%;
+height:100vh;
+}
+
+.header
+{
+
+}
+.header-menu-logo-overflow
+{
+background-image: url("../Images/headerbackground.jpg");
+background-repeat:repeat-x;
+
+}
+.header-menu-logo
+{
+	margin: 0 auto;
+	height:80px;
+}
+
+.header-logo
+{
+	width: 20%;
+	float:left;
+	padding-top:18px;
+}
+.menu-search-container
+{
+		float:right;
+		width:80%;
+}
+.header-menu
+{
+	float:left;
+	padding-top:20px;
+	color:#ffffff;
+}
+
+.header-search
+{
+	float:right;
+	padding-top:30px;
+}
+.burger
+{
+	display:none;
+	padding-top:30px;
+	float:right;
+}
+.burger div{
+height:2px;
+width:25px;
+background:#ffffff;
+margin-top:3px;
+}
+.header-pageinfo-overflow
+{
+	background:#ececec;
+	height:80px;
+	position: relative;
+}
+.header-pageinfo
+{
+	margin: 0 auto;
+	height:80px;
+	color:#848e8d;
+}
+.header-pagename
+{
+	float:left;
+	padding-top:35px;
+}
+
+.header-navigation
+{
+	float:right;
+	padding-top:35px;
+}
+
+.triangle{
+	background:url("../Images/arrow.png");
+	background-repeat:none;
+	position: absolute;
+	height:18px;
+	width:30px;
+}
+.all-body
+{
+	color:#a4a8a9;
+}
+
+/*Footer;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+.footer-wrapper
+{
+color:#ffffff;
+}
+.footer-top
+{
+	background:url("../Images/footerbg.png") repeat-x;
+	width:100%;
+	height:300px;
+}
+.footer-bottom
+{
+	background:#6bb4ad;
+	height:50px;
+}
+.copyright-info
+{
+	width:80px;
+	float:left;
+	padding-top:15px;
+}
+.logo-container
+{
+	padding-top:10px;
+		float:right;
+}
+.footer-top-wrapper{
+padding-top:30px;
+}
+.contact
+{
+	width:365px;
+	line-height:30px;
+	padding-top:10px;
+	float:left
+}
+.phone
+{
+	width:30px;
+	float: left;
+}
+.number
+{
+	margin-left:25px;
+	float:left;
+	width:300px;
+}
+.footer-top-company
+{
+	float: left;
+	margin: 30px;
+	width: 100px;
+}
+.footer-top-community
+{
+	float: left;
+	margin: 30px;
+	width: 100px;
+}
+.from-the-blog
+{
+	float:right;
+	width:335px;
+	padding-top:30px;
+}
+
+.from-the-blog-info
+{
+	padding-top:10px;
+}
+.from-the-blog-info1
+{
+	padding-top:90px;
+}
+.from-the-blog-text
+{
+	float:right;
+}
+.from-the-blog-image
+{
+	width:70px;
+	float:left;
+}
+.from-the-blog-text-header
+{
+	width: 230px;
+	float:right;
+	line-height:25px
+}
+
+
+@media screen and (max-width: 768px)
+{
+	.triangle{
+	display:none;
+	}
+	.burger{
+	display:block;
+	cursor:pointer;
+	}
+	
+	.header-menu
+{
+	display:block;
+	float:right;
+	padding-top:20px;
+	color:#ffffff;
+	background:#6bb4ad;
+}
+.header-pageinfo-overflow
+{
+	display:none;
+}
+
+}
