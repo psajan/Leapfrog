@@ -1,0 +1,214 @@
+.all-content-wrapper
+{ 
+overflow:visible;
+background:#f3f3f3;
+font-family: "Arial", Sans-serif;
+font-size:14;
+}
+
+.header
+{
+
+}
+.header-menu-logo-overflow
+{
+background-image: url("../Images/headerbackground.jpg");
+background-repeat:repeat-x;
+
+}
+.header-menu-logo
+{
+	margin: 0 auto;
+	height:80px;
+}
+
+.header-logo
+{
+	width: 104px;
+	float:left;
+	padding-top:18px;
+}
+.menu-search-container
+{
+		float:right;
+		width:700px;
+}
+.header-menu
+{
+	float:left;
+	padding-top:20px;
+	color:#ffffff;
+}
+
+.header-search
+{
+	float:right;
+	padding-top:30px;
+}
+.header-pageinfo-overflow
+{
+	background:#ececec;
+	height:80px;
+	position: relative;
+}
+.header-pageinfo
+{
+	margin: 0 auto;
+	height:80px;
+	color:#848e8d;
+}
+.header-pagename
+{
+	float:left;
+	padding-top:35px;
+}
+
+.header-navigation
+{
+	float:right;
+	padding-top:35px;
+}
+
+.triangle{
+	background:url("../Images/arrow.png");
+	background-repeat:none;
+	position: absolute;
+	height:18px;
+	width:30px;
+}
+.all-body
+{
+	color:#a4a8a9;
+}
+.intro-why-choose-us
+{
+	width:240px;
+	float:left;
+}
+.intro-facts
+{
+	padding-top:75px;
+}
+.intro-graphs
+{
+	float:left;
+	width: 550px;
+	margin-left:60px;
+}
+.intro-graphs-visual
+{
+	padding-top:65px;
+}
+.what-clients-say
+{
+	float:right;
+	width:220px;
+}
+.what-client-say-review-text-container
+{
+	background:#ffffff;
+	padding:15px;
+	margin-top:15px;
+}
+.review-arrow{
+background: url("../Images/reviewarrow.png");
+height:25px;
+width:40px;
+float:left;
+}
+.customer-name
+{
+	width:80px;
+	float:left;
+	padding-top:10px;
+}
+/*Footer;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+.footer-wrapper
+{
+color:#ffffff;
+}
+.footer-top
+{
+	background:url("../Images/footerbg.png") repeat-x;
+	width:100%;
+	height:300px;
+}
+.footer-bottom
+{
+	background:#6bb4ad;
+	height:50px;
+}
+.copyright-info
+{
+	width:80px;
+	float:left;
+	padding-top:15px;
+}
+.logo-container
+{
+	padding-top:10px;
+		float:right;
+}
+.footer-top-wrapper{
+padding-top:30px;
+}
+.contact
+{
+	width:365px;
+	line-height:30px;
+	padding-top:10px;
+	float:left
+}
+.phone
+{
+	width:30px;
+	float: left;
+}
+.number
+{
+	margin-left:25px;
+	float:left;
+	width:300px;
+}
+.footer-top-company
+{
+	float: left;
+	margin: 30px;
+	width: 100px;
+}
+.footer-top-community
+{
+	float: left;
+	margin: 30px;
+	width: 100px;
+}
+.from-the-blog
+{
+	float:right;
+	width:335px;
+	padding-top:30px;
+}
+
+.from-the-blog-info
+{
+	padding-top:10px;
+}
+.from-the-blog-info1
+{
+	padding-top:90px;
+}
+.from-the-blog-text
+{
+	float:right;
+}
+.from-the-blog-image
+{
+	width:70px;
+	float:left;
+}
+.from-the-blog-text-header
+{
+	width: 230px;
+	float:right;
+	line-height:25px
+}
