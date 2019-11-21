@@ -1,0 +1,92 @@
+.menu > ul > li
+{
+	list-style:none;
+}
+.menu > ul > li 
+{
+	float: left;
+	padding-left:20px;
+	text-decoration:none;
+}
+.menu > ul > li >a
+{
+	text-decoration:none;
+	color: #ffffff;
+}
+
+.button
+{
+	background:none;
+	color:#ffffff;
+	border-color: #ffffff;
+	padding:10px;
+	border-radius:20px;
+	
+}
+.button:hover 
+{
+	background:#fdaf19;
+	color:#1c1d1d;
+	border-color:#fdaf19;
+}
+.buyyourticket
+{
+	width:200px;
+}
+.btn-buyticketsnow
+{
+	margin-left:20px;
+	width:200px;
+}
+.btnlearnmore
+{
+	width:100px;
+}
+
+/*body*/
+.about-design-header > h1
+{
+margin-bottom:20px;	
+}
+.about-design-text > p
+{
+  font-family: "Poppins";
+  color:#474848;
+}
+.body-button > a
+{
+	text-decoration:none;
+	color:000000;
+}
+.speakers-pictures > ul 
+{
+	list-style:none;
+	padding:18px;
+	margin:0 auto;
+}
+.speakers-pictures > ul >li
+{
+	float:left;
+	padding:10px;
+}
+.footerbutton
+{
+	margin:0 auto;
+	background:#fdaf19;
+	color:000000;
+	border-radius:20px;
+	margin-right:170px;
+	margin-top:20px;
+	}
+.number
+{
+  font-size: 30px;
+  font-family: "Poppins";
+  font-weight: bold;
+  color: #ffffff solid; 
+}
+
+}
+
+
+
