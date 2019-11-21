@@ -7,7 +7,7 @@
 /* Header part */
 .header-wrapper
 {
-	background: url("../Images/headerbg.png");
+	background: url("../Images/Headerbg.png");
 	background-position:center;
 }
 .header-content-wrapper
@@ -17,7 +17,7 @@
 }
 .logo
 {
-	background:url("../Images/logo.png");
+	background:url("../Images/Logo.png");
 	background-repeat:no-repeat;
 	width: 159px;
 	height:81px;
