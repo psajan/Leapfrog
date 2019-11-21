@@ -1,0 +1,89 @@
+.header-menu > ul {
+	list-style-type:none;
+}
+
+.header-menu > ul > li {
+  float: left;
+  padding:10px;
+}
+.header-menu > ul > li > a {
+  text-decoration:none;
+  color:#ffffff;
+  display:block;
+}
+
+a.menu:hover 
+{
+	background:#63a19e;
+}
+.header-navigation > ul {
+	list-style-type:none;
+}
+.header-navigation > ul > li 
+{
+  float: left;
+  padding:10px;	
+}
+.header-navigation > ul > li >a {
+text-decoration:none;
+}
+/*Body*/
+.intro-top-heading > h3
+{
+	padding-top:55px;
+	color:#e24f3f;
+}
+
+.intro-top-paragraph > p
+{
+	padding-top:35px;
+}
+
+.intro-why-choose-us-list > ul 
+{
+	list-style-type:none;
+	padding-top:15px;
+}
+.intro-why-choose-us-list > ul > li
+{
+	padding-top:10px;
+}
+ .clearfix
+ {
+	 
+  overflow: auto;
+}
+ /*Footer*/
+ .logo-container > ul
+ {
+	 list-style-type:none;
+	 
+ }
+ .logo-container > ul > li
+{
+	float:left;
+	padding-left:10px;
+}
+
+.footer-top-list > ul
+ {
+	 list-style-type:none;
+	 
+ }
+ .footer-top-list > ul > li
+{
+	padding-top:10px;
+}
+ .footer-top-list > ul > li > a
+{
+	text-decoration:none;
+	 color:#ffffff;
+}
+.greentext
+{
+	color:#51938f;
+}
+.footer-top-header > h2
+{
+	color: 47847c;
+}
