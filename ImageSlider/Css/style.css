@@ -1,0 +1,70 @@
+.body-container {
+    width: 1400px
+}
+
+.image-container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#image-wrapper {
+    position: absolute;
+    margin: 0 auto;
+    transition: left 1s;
+}
+
+.image {
+    float: left;
+    margin: 0px auto;
+}
+
+.btnprevnext {
+    margin-top: 20px;
+}
+
+.arrow-container img {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.arrow-container img:hover {
+    opacity: 100%;
+}
+
+.arrow-previous {
+    position: absolute;
+    top: 45%;
+}
+
+.arrow-next {
+    position: absolute;
+    top: 45%;
+    right: 0;
+}
+
+.dots-container {
+    bottom: 10%;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin-left: 3px;
+    cursor: pointer;
+    display: inline-block;
+    background-color: #ffffff;
+    opacity: 50%;
+}
+
+.dot:hover {
+    background-color: #000000;
+}
