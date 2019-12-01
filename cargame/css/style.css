@@ -1,0 +1,10 @@
+.app {
+    height: 600px;
+    width: 300px;
+    background: #dfdfdf;
+    position: relative;
+}
+
+.box {
+    position: absolute;
+}
