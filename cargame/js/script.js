@@ -6,7 +6,7 @@
         this.width = 90;
         this.height = 90;
         this.element = null;
-        this.image = "url(\"images/ant.png\")";
+        this.image = "url(\"images/enemy.png\")";
         this.cars = [0, 100, 200];
         this.parentElement = parentElement;
         var that = this;
@@ -44,9 +44,11 @@
             var cars = this.cars;
             if (this.y > 480) this.setPostion(getRandomArbitrary(cars), 0);
             this.y += this.speed;
+
             // if (this.x < 0 || this.x > 480) this.speed = -this.speed;
             // this.x += this.speed;
             this.draw();
+
         }
 
         this.checkCollision = function(boxes) {
@@ -54,9 +56,9 @@
                 if ((boxes[2].x <= (boxes[i].x + boxes[i].width)) && ((boxes[2].x + boxes[2].width) >= boxes[i].x) &&
                     (boxes[2].y <= (boxes[i].y + boxes[i].height)) &&
                     ((boxes[2].y + boxes[2].height) >= boxes[i].y)) {
-                    console.log("collided");
-                    this.speed = -this.speed;
-                    boxes[i].speed = -boxes[i].speed;
+                    //this.speed = -this.speed;
+                    //boxes[i].speed = -boxes[i].speed;
+                    // boxes[i].style.display = "none";
                 }
             }
             return false;
@@ -97,15 +99,7 @@
         }
 
         //setInterval(this.startGame, 7000);
-        this.myCar = function() {
-            var myCar = new Box(parentElement).init();
-            myCar.setPostion(
-                getRandomArbitrary(myCar.cars),
-                400
-            )
-            myCar.draw();
-            //boxes.push(myCar);
-        }
+
         this.moveBoxes = function() {
             getAppDivs = this.parentElement.getElementsByTagName("div");
             for (var i = 0; i < this.boxCount; i++) {
@@ -113,6 +107,8 @@
                 boxes[i].move();
                 boxes[i].checkCollision(boxes)
             }
+            getAppDivs[2].setAttribute("id", 2);
+            document.getElementById('0').style.backgroundImage = "url(\"images/mycar.png\")";
             document.onkeydown = function(e) {
                 var lane = document.getElementById('0').style.left;
                 switch (e.keyCode) {
@@ -120,15 +116,19 @@
 
                         if (lane == "200px") {
                             document.getElementById('0').style.left = (100) + "px";
-                        } else {
+                        } else if (lane == "100px") {
                             document.getElementById('0').style.left = (0) + "px";
+                        } else {
+
                         }
                         break;
                     case 39: //right
                         if (lane == "0px") {
                             document.getElementById('0').style.left = (100) + "px";
-                        } else {
+                        } else if (lane == "100px") {
                             document.getElementById('0').style.left = (200) + "px";
+                        } else {
+
                         }
 
                 }
@@ -138,19 +138,4 @@
     var parentElement = document.getElementById('app');
 
     var cars = new Game(parentElement).startGame();
-    // var myCar = new Game(parentElement, 1).startGame();
-    //myCar.style.backgroundImage = "none";
 })();
-var getApp = document.getElementById('app');
-var getBoxes = getApp.getElementsByTagName("div");
-
-function smashFunction(n) {
-
-    getBoxes[n].style.backgroundImage = "url(\"images/splat.png\")";
-    setTimeout(function() { nothing(n); }, 150);
-
-}
-
-function nothing(n) {
-    getBoxes[n].style.display = "none";
-}

@@ -1,8 +1,9 @@
 .app {
     height: 600px;
     width: 300px;
-    background: #dfdfdf;
     position: relative;
+    background-image: url("../images/roadn.png");
+    background-size: auto;
 }
 
 .box {
