@@ -1,0 +1,24 @@
+.app {
+    height: 600px;
+    width: 300px;
+    position: relative;
+    background-image: url("../images/roadn.png");
+    background-size: 300px;
+    background-repeat: repeat-y;
+}
+
+.gameover {
+    height: 600px;
+    width: 300px;
+    background-image: url("../images/roadn.png");
+    background-size: 300px;
+    opacity: 50%;
+    background-repeat: repeat-y;
+    display: none;
+    color: #000000;
+    text-align: center;
+}
+
+.box {
+    position: absolute;
+}
