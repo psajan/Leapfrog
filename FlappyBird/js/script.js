@@ -31,8 +31,6 @@ function draw() {
     ctx.drawImage(bird, birdx, birdy);
     birdy += gravity;
     movepipes();
-    checkCollision();
-
     ctx.fillText("Score : " + points, 10, canvas.height - 20);
     requestAnimationFrame(draw);
 }
@@ -48,17 +46,15 @@ function movepipes() {
                 y: Math.floor(Math.random() * pipeUp.height) - pipeUp.height
             });
         }
-        checkCollision(pipe[i]);
+        checkCollision(pipe[i].x);
         getPoints(pipe[i]);
-        requestAnimationFrame(draw);
     }
 }
 
 function checkCollision(pipe) {
-    var temp = pipe.x;
+    var temp = pipe;
     if (birdx + bird.width >= pipe.x && bird <= pipe.x + pipeUp.width &&
-        (birdy <= pipe.y + pipeUp.height || bird + bird.height >= pipe.y + verticalGap) ||
-        birdy + bird.height >= canvas.height - ground.height) {
+        (birdy <= pipe.y + pipeUp.height || bird + bird.height >= pipe.y + verticalGap) || birdy + bird.height >= canvas.height - ground.height) {
         bird.style.display = "none"
     }
 }
