@@ -32,7 +32,7 @@ function draw() {
     birdy += gravity;
     movepipes();
     ctx.fillText("Score : " + points, 10, canvas.height - 20);
-    requestAnimationFrame(draw);
+    var loop = requestAnimationFrame(draw);
 }
 
 function movepipes() {
@@ -52,10 +52,14 @@ function movepipes() {
 }
 
 function checkCollision(pipe) {
-    var temp = pipe;
-    if (birdx + bird.width >= pipe.x && bird <= pipe.x + pipeUp.width &&
-        (birdy <= pipe.y + pipeUp.height || bird + bird.height >= pipe.y + verticalGap) || birdy + bird.height >= canvas.height - ground.height) {
-        bird.style.display = "none"
+    var temp1 = birdy;
+    var temp2
+    if (((birdx + bird.width >= pipe.x) &&
+            (birdx <= pipe.x + pipeUp.width) &&
+            (birdy <= pipe.y + pipeUp.height || birdy + bird.height >= pipe.y + gap)) || ((birdy + bird.height) >= (canvas.height - ground.height))) {
+        birdy = canvas.height - ground.height;
+        gravity = 0;
+        cancelAnimationFrame(loop);
     }
 }
 
